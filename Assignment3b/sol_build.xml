@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project basedir="." default="build-service"  name="NFV-3">
+	<description>
+			Script for NFV Assignment 3 solution
+	</description>
+	<property name="lab3.location" location="." />
+
+	<property name="basedir" location="." />
+	<property name="src.dir" location="${lab3.location}/src" />
+	<property name="build.dir" location="${lab3.location}/build" />
+	<property name="base.package" value="it.polito.dp2.NFV.sol3" />
+    <property name="shared.location" location="/opt/dp2/shared"/>
+	<property name="ext.lib.dir" location="${shared.location}/lib" />
+	<property name="client1.generated.package" value="${base.package}.client1.generated" />
+	<property name="client2.generated.package" value="${base.package}.client2.generated" />
+	<property name="gen.dir" location="${basedir}/gen-src" />
+		
+	<property name="package.dir" location="${src.dir}/it/polito/dp2/NFV/sol3/" />
+	<property name="service.dir" location="${package.dir}/service" />
+	<property name="client1.dir" location="${package.dir}/client1" />
+	<property name="client2.dir" location="${package.dir}/client2" />
+
+
+	<!-- Target chk-bindings 
+		<target name="-chk-bindings">
+			<uptodate property="generate-artifacts.notRequired" targetfile="${source.build.dir}/.flagfile">
+				<srcfiles dir="${schema.dir}" includes="**/*.xsd" />
+			</uptodate>
+		</target>-->
+	
+	
+	
+	<path id="sol.classpath">
+			<pathelement location="${build.dir}" />
+			<fileset dir="${ext.lib.dir}">
+				<include name="*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+	
+		<!-- Target generate-bindings -->
+	
+	<!-- define wjc task (WADL to Java) -->
+			
+	<taskdef name="wjc" classname="org.jvnet.ws.wadl2java.WJCTask">
+						<classpath>
+							<fileset dir="${ext.lib.dir}" includes="*.jar" />
+						</classpath>
+					</taskdef>
+	
+		<target name="build-service" depends="generate-bindings,generate-artifacts-wadl,build-client">
+			<echo message="Build Service"/>
+		</target>
+		<target name="generate-bindings" description="Generate bindings from schema">
+			<exec executable="xjc" failonerror="true" >
+				<arg value="-d" />
+				<arg value="${build.dir}" />
+				<arg value="-d" />
+				<arg value="${src.dir}" />
+				<arg value="-p" />
+				<arg value="it.polito.dp2.NFV.sol3.service.jaxb" />
+				<arg value="${xsd.dir}/NfvDeployer.xsd" />
+				
+			</exec>
+			<touch file="${src.dir}/.flagfile" />
+		</target>
+	
+	<!-- define wjc task (WADL to Java) -->
+		<taskdef name="wjc" classname="org.jvnet.ws.wadl2java.WJCTask">
+			<classpath>
+				<fileset dir="${ext.lib.dir}" includes="*.jar" />
+			</classpath>
+		</taskdef>
+
+		<!-- define the client artifacts generation target (from wadl)-->
+		<target name="generate-artifacts-wadl">
+			<!--<mkdir dir="${gen.dir}" /> -->
+			<echo message="Compiling the descriptions..." />
+			<wjc description="${Neo4JSimpleXMLWADL}" package="it.polito.dp2.NFV.sol3.service.generated" autoSchemaPackage="false" target="${src.dir}">
+				<!-- autoSchemaPackage="true" -->
+				<!--  <customizations dir="${root.location}" includes="binding.xjc"/> -->
+				<produces dir="${src.dir}/it/polito/dp2/NFV/sol3/service/generated" includes="*.java" />
+				<depends dir="${basedir}" includes="sol_build.xml" />
+			</wjc>
+		</target>
+
+	
+	
+	<!-- clients targets -->
+		<target name="build-client"  depends="generate-bindings-client2, generate-bindings-client1">
+			<echo>Building client 1</echo>
+			<javac destdir="${build.dir}" debug="${debug}" debuglevel="${debuglevel}" source="${source}" target="${target}" includeantruntime="false">
+				<src path="${client1.dir}" />
+				<src path="${src.dir}" />
+				<classpath>
+					<path refid="sol.classpath" />
+				</classpath>
+			</javac>
+			<echo>Done.</echo>
+			<echo>Building client 2</echo>
+			<javac destdir="${build.dir}" debug="${debug}" debuglevel="${debuglevel}" source="${source}" target="${target}" includeantruntime="false">
+				<src path="${client2.dir}" />
+				<src path="${src.dir}" />
+				<classpath>
+					<path refid="sol.classpath" />
+				</classpath>
+			</javac>
+			<echo>Done.</echo>
+		</target>
+			
+		<target name="generate-bindings-client2">	
+			<exec executable="xjc" failonerror="true">
+				<arg value="-d" />
+				<arg value="${build.dir}" />
+				<arg value="-d" />
+				<arg value="${src.dir}" />
+				<arg value="-p" />
+				<arg value="${client2.generated.package}" />
+				<arg value="${xsd.dir}/NfvDeployer.xsd" />
+			</exec>
+			<touch file="${src.dir}/.flagfile" />
+		</target>
+		
+		<target name="generate-bindings-client1">
+			<exec executable="xjc" failonerror="true">
+				<arg value="-d" />
+				<arg value="${build.dir}" />
+				<arg value="-d" />
+				<arg value="${src.dir}" />
+				<arg value="-p" />
+				<arg value="${client1.generated.package}" />
+				<arg value="${xsd.dir}/NfvDeployer.xsd" />
+			</exec>
+			<touch file="${src.dir}/.flagfile" />
+		</target>
+
+		
+ </project>

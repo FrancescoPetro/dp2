@@ -1,0 +1,1084 @@
+Assignment solution file format: OK
+
+  -> CRASH executing the tests or compilation error
+
+Second mandatory tests:
+  -> Junit tests : OK
+
+Mandatory tests failed.
+Number of tests passed: 1 / 2
+
+Correction of assignment 3 failed.
+ 
+---------------------- TEST LOG ----------------------
+ 
+Working directory: /tmp/tmp.oFaCv1UItz
+Copying .zip file to the working directory ...
+Done.
+Unzipping .zip file...
+Archive:  es3-20180222084726.zip
+   creating: WebContent/
+   creating: WebContent/META-INF/
+   creating: WebContent/WEB-INF/
+   creating: WebContent/WEB-INF/lib/
+   creating: WebContent/_swagger-ui/
+  inflating: WebContent/META-INF/MANIFEST.MF  
+  inflating: WebContent/WEB-INF/web.xml  
+  inflating: WebContent/_swagger-ui/favicon-16x16.png  
+  inflating: WebContent/_swagger-ui/favicon-32x32.png  
+  inflating: WebContent/_swagger-ui/index.html  
+  inflating: WebContent/_swagger-ui/oauth2-redirect.html  
+  inflating: WebContent/_swagger-ui/swagger-ui-bundle.js  
+  inflating: WebContent/_swagger-ui/swagger-ui-bundle.js.map  
+  inflating: WebContent/_swagger-ui/swagger-ui-standalone-preset.js  
+  inflating: WebContent/_swagger-ui/swagger-ui-standalone-preset.js.map  
+  inflating: WebContent/_swagger-ui/swagger-ui.css  
+  inflating: WebContent/_swagger-ui/swagger-ui.css.map  
+  inflating: WebContent/_swagger-ui/swagger-ui.js  
+  inflating: WebContent/_swagger-ui/swagger-ui.js.map  
+  inflating: WebContent/index.html   
+   creating: custom/
+  inflating: custom/README           
+   creating: doc/
+  inflating: doc/README              
+  inflating: sol_build.xml           
+   creating: src/
+   creating: src/it/
+   creating: src/it/polito/
+   creating: src/it/polito/dp2/
+   creating: src/it/polito/dp2/NFV/
+   creating: src/it/polito/dp2/NFV/sol3/
+   creating: src/it/polito/dp2/NFV/sol3/client1/
+  inflating: src/it/polito/dp2/NFV/sol3/client1/DeployedNffg.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/NfvClient.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/NfvClientFactory.java  
+   creating: src/it/polito/dp2/NFV/sol3/client1/generated/
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/ConnectionPerformance.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Ft.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Host.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/HostNodes.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/In.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Link.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Links.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Nffg.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Nffgs.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Nfv.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Node.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Nodes.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/ObjectFactory.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Performances.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/Vnf.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client1/generated/VnfCatalog.java  
+   creating: src/it/polito/dp2/NFV/sol3/client2/
+  inflating: src/it/polito/dp2/NFV/sol3/client2/MyNfvReader.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/NfvReaderFactory.java  
+   creating: src/it/polito/dp2/NFV/sol3/client2/generated/
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/ConnectionPerformance.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Ft.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Host.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/HostNodes.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/In.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Link.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Links.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Nffg.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Nffgs.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Nfv.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Node.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Nodes.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/ObjectFactory.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Performances.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/Vnf.java  
+  inflating: src/it/polito/dp2/NFV/sol3/client2/generated/VnfCatalog.java  
+   creating: src/it/polito/dp2/NFV/sol3/service/
+  inflating: src/it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/NfvDeployerService.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/ReachabilityTester.java  
+   creating: src/it/polito/dp2/NFV/sol3/service/generated/
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Labels.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Localhost_Neo4JSimpleXMLWebapi.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Node.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Nodes.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/ObjectFactory.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Properties.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Property.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Relationship.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/Relationships.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/generated/package-info.java  
+   creating: src/it/polito/dp2/NFV/sol3/service/jaxb/
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/ConnectionPerformance.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Ft.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Host.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/HostNodes.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/In.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Link.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Links.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Nffg.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Nffgs.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Nfv.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Node.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Nodes.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/ObjectFactory.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Performances.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/Vnf.java  
+  inflating: src/it/polito/dp2/NFV/sol3/service/jaxb/VnfCatalog.java  
+   creating: xsd/
+  inflating: xsd/NfvDeployer.xsd     
+  inflating: xsd/NfvDeployer_mod.xsd  
+  inflating: xsd/NfvDeployer_old.xsd  
+  inflating: xsd/README              
+  inflating: xsd/nfvInfo.xsd         
+Done.
+Check if the NfvClientFactory.java file exists...
+Done.
+Check if the NfvReaderFactory.java file exists...
+Done.
+Creating the environment for running the tests...
+
+----------------------------------------------
+Running mandatory tests...
+
+Buildfile: /tmp/tmp.oFaCv1UItz/build.xml
+Trying to override old definition of datatype resources
+
+setseed:
+
+redeployNeo4JSimpleXML:
+     [echo] Uneploying Neo4JSimpleXML to tomcat...
+ [undeploy] OK - Undeployed application at context path [/Neo4JSimpleXML]
+     [echo] Deploying Neo4JSimpleXML to tomcat... at "http://localhost:7475/manager/text"
+   [deploy] OK - Deployed application at context path [/Neo4JSimpleXML]
+
+undeployWS:
+     [echo] Undeploying...
+ [undeploy] OK - Undeployed application at context path [/NfvDeployer]
+
+redeployWS:
+
+init:
+    [mkdir] Created dir: /tmp/tmp.oFaCv1UItz/build
+    [mkdir] Created dir: /tmp/tmp.oFaCv1UItz/target
+
+build-service:
+
+generate-bindings:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Host.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/In.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Link.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Links.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Node.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/VnfCatalog.java
+    [touch] Creating /tmp/tmp.oFaCv1UItz/src/.flagfile
+
+generate-artifacts-wadl:
+     [echo] Compiling the descriptions...
+      [wjc] Info: Processing: http://localhost:7475/Neo4JSimpleXML/webapi/application.wadl
+      [wjc] Info: Processing: http://localhost:7475/Neo4JSimpleXML/webapi/application.wadl/xsd0.xsd
+
+generate-bindings-client2:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/VnfCatalog.java
+
+generate-bindings-client1:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/VnfCatalog.java
+
+build-client:
+     [echo] Building client 1
+    [javac] Warning: DeployedNffg.java modified in the future.
+    [javac] Warning: NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 86 source files to /tmp/tmp.oFaCv1UItz/build
+    [javac] Note: /tmp/tmp.oFaCv1UItz/src/it/polito/dp2/NFV/sol3/service/generated/Localhost_Neo4JSimpleXMLWebapi.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [echo] Done.
+     [echo] Building client 2
+    [javac] Warning: MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 25 source files to /tmp/tmp.oFaCv1UItz/build
+     [echo] Done.
+
+build-service:
+     [echo] Build Service
+
+package-service:
+     [copy] Copying 15 files to /tmp/tmp.oFaCv1UItz/target
+     [copy] Copied 5 empty directories to 1 empty directory under /tmp/tmp.oFaCv1UItz/target
+     [copy] Copying 104 files to /tmp/tmp.oFaCv1UItz/target/WEB-INF/classes
+     [copy] Copying 9 files to /tmp/tmp.oFaCv1UItz/target/WEB-INF/lib
+      [jar] Building jar: /tmp/tmp.oFaCv1UItz/war/NfvDeployer.war
+
+deployWS:
+     [echo] Deploying to tomcat...
+   [deploy] OK - Deployed application at context path [/NfvDeployer]
+
+run-tests:
+     [echo] Running functional tests
+     [echo] Seed: 11223
+
+init:
+
+build-client:
+
+generate-bindings-client2:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/VnfCatalog.java
+
+generate-bindings-client1:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/VnfCatalog.java
+
+build-client:
+     [echo] Building client 1
+    [javac] Warning: DeployedNffg.java modified in the future.
+    [javac] Warning: NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 58 source files to /tmp/tmp.oFaCv1UItz/build
+     [echo] Done.
+     [echo] Building client 2
+    [javac] Warning: MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 25 source files to /tmp/tmp.oFaCv1UItz/build
+     [echo] Done.
+
+runFuncTest.real:
+     [echo] Running Junit tests...
+    [junit] Running it.polito.dp2.NFV.lab3.tests.NFVTests
+    [junit] Testsuite: it.polito.dp2.NFV.lab3.tests.NFVTests
+    [junit] Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 9.556 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 9.556 sec
+    [junit] 
+    [junit] ------------- Standard Output ---------------
+    [junit] Random NfvReader: Using seed: 11223
+    [junit] Random NfvReader: Test case: 0
+    [junit] Comparing server H0
+    [junit] Comparing server H1
+    [junit] Comparing server H2
+    [junit] DEBUG: starting testDeployNffg
+    [junit] deployNffg in NfvClient
+    [junit] Host del Node descriptor n°0 :H0
+    [junit] Host del Node descriptor n°1 :H2
+    [junit] Host del Node descriptor n°2 :H0
+    [junit] Host del Node descriptor n°3 :H2
+    [junit] Host del Node descriptor n°4 :H1
+    [junit] Host del Node descriptor n°5 :H0
+    [junit] Host del Node descriptor n°6 :H1
+    [junit] Host del Node descriptor n°7 :H1
+    [junit] Host del Node descriptor n°8 :H2
+    [junit] Numero di nodi nell'Nffg Descriptor: 9
+    [junit] deployNffg in DeployedNffg
+    [junit] getNffgs in DeployedNffg
+    [junit] Numero di nffg: 1
+    [junit] Nffg1
+    [junit] Riposta dal server per l'NFFG postato: Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] Nodo da inserire : WEBCLIENTt0H0 WEBCLIENTt H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBCLIENTt0H0 WEBCLIENTt H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt0H0
+    [junit] Nodo da inserire : WEBSERVERt1H2 WEBSERVERt H2 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBSERVERt1H2 WEBSERVERt H2 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt1H2
+    [junit] Nodo da inserire : MAILSERVERt2H0 MAILSERVERt H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: MAILSERVERt2H0 MAILSERVERt H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt2H0
+    [junit] Nodo da inserire : DPId3H2 DPId H2 Nffg1
+    [junit] Risposta dal server per il nodo postato: DPId3H2 DPId H2 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPId3H2
+    [junit] Nodo da inserire : MAILSERVERt4H1 MAILSERVERt H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: MAILSERVERt4H1 MAILSERVERt H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt4H1
+    [junit] Nodo da inserire : DPIa5H0 DPIa H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: DPIa5H0 DPIa H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa5H0
+    [junit] Nodo da inserire : WEBCLIENTt6H1 WEBCLIENTt H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBCLIENTt6H1 WEBCLIENTt H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt6H1
+    [junit] Nodo da inserire : WEBCLIENTt7H1 WEBCLIENTt H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBCLIENTt7H1 WEBCLIENTt H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt7H1
+    [junit] Nodo da inserire : MAILCLIENTt8H2 MAILCLIENTt H2 Nffg1
+    [junit] Risposta dal server per il nodo postato: MAILCLIENTt8H2 MAILCLIENTt H2 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILCLIENTt8H2
+    [junit] WEBCLIENTt0H0 DPId3H2 0.0 0
+    [junit] Link da inserire: Link0 WEBCLIENTt0H0 DPId3H2 0 0.0
+    [junit] Link da inserire:  Link0 WEBCLIENTt0H0 DPId3H2
+    [junit] Risposta dal server per il link inserito: Link0 WEBCLIENTt0H0 DPId3H2
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt1H2 DPIa5H0 0.0 0
+    [junit] Link da inserire: Link1 WEBSERVERt1H2 DPIa5H0 0 0.0
+    [junit] Link da inserire:  Link1 WEBSERVERt1H2 DPIa5H0
+    [junit] Risposta dal server per il link inserito: Link1 WEBSERVERt1H2 DPIa5H0
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt2H0 DPIa5H0 0.0 0
+    [junit] Link da inserire: Link2 MAILSERVERt2H0 DPIa5H0 0 0.0
+    [junit] Link da inserire:  Link2 MAILSERVERt2H0 DPIa5H0
+    [junit] Risposta dal server per il link inserito: Link2 MAILSERVERt2H0 DPIa5H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPId3H2 WEBCLIENTt7H1 0.0 0
+    [junit] Link da inserire: Link3 DPId3H2 WEBCLIENTt7H1 0 0.0
+    [junit] Link da inserire:  Link3 DPId3H2 WEBCLIENTt7H1
+    [junit] Risposta dal server per il link inserito: Link3 DPId3H2 WEBCLIENTt7H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPId3H2 MAILCLIENTt8H2 0.0 0
+    [junit] Link da inserire: Link4 DPId3H2 MAILCLIENTt8H2 0 0.0
+    [junit] Link da inserire:  Link4 DPId3H2 MAILCLIENTt8H2
+    [junit] Risposta dal server per il link inserito: Link4 DPId3H2 MAILCLIENTt8H2
+    [junit] getNffgs in DeployedNffg
+    [junit] DPId3H2 MAILSERVERt4H1 0.0 0
+    [junit] Link da inserire: Link5 DPId3H2 MAILSERVERt4H1 0 0.0
+    [junit] Link da inserire:  Link5 DPId3H2 MAILSERVERt4H1
+    [junit] Risposta dal server per il link inserito: Link5 DPId3H2 MAILSERVERt4H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPId3H2 WEBCLIENTt0H0 0.0 0
+    [junit] Link da inserire: Link6 DPId3H2 WEBCLIENTt0H0 0 0.0
+    [junit] Link da inserire:  Link6 DPId3H2 WEBCLIENTt0H0
+    [junit] Risposta dal server per il link inserito: Link6 DPId3H2 WEBCLIENTt0H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPId3H2 WEBCLIENTt6H1 0.0 0
+    [junit] Link da inserire: Link7 DPId3H2 WEBCLIENTt6H1 0 0.0
+    [junit] Link da inserire:  Link7 DPId3H2 WEBCLIENTt6H1
+    [junit] Risposta dal server per il link inserito: Link7 DPId3H2 WEBCLIENTt6H1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt4H1 DPIa5H0 0.0 0
+    [junit] Link da inserire: Link8 MAILSERVERt4H1 DPIa5H0 0 0.0
+    [junit] Link da inserire:  Link8 MAILSERVERt4H1 DPIa5H0
+    [junit] Risposta dal server per il link inserito: Link8 MAILSERVERt4H1 DPIa5H0
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt4H1 DPId3H2 0.0 0
+    [junit] Link da inserire: Link9 MAILSERVERt4H1 DPId3H2 0 0.0
+    [junit] Link da inserire:  Link9 MAILSERVERt4H1 DPId3H2
+    [junit] Risposta dal server per il link inserito: Link9 MAILSERVERt4H1 DPId3H2
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa5H0 WEBCLIENTt6H1 0.0 0
+    [junit] Link da inserire: Link10 DPIa5H0 WEBCLIENTt6H1 0 0.0
+    [junit] Link da inserire:  Link10 DPIa5H0 WEBCLIENTt6H1
+    [junit] Risposta dal server per il link inserito: Link10 DPIa5H0 WEBCLIENTt6H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa5H0 MAILSERVERt2H0 0.0 0
+    [junit] Link da inserire: Link11 DPIa5H0 MAILSERVERt2H0 0 0.0
+    [junit] Link da inserire:  Link11 DPIa5H0 MAILSERVERt2H0
+    [junit] Risposta dal server per il link inserito: Link11 DPIa5H0 MAILSERVERt2H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa5H0 WEBSERVERt1H2 0.0 0
+    [junit] Link da inserire: Link12 DPIa5H0 WEBSERVERt1H2 0 0.0
+    [junit] Link da inserire:  Link12 DPIa5H0 WEBSERVERt1H2
+    [junit] Risposta dal server per il link inserito: Link12 DPIa5H0 WEBSERVERt1H2
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt6H1 DPId3H2 0.0 0
+    [junit] Link da inserire: Link13 WEBCLIENTt6H1 DPId3H2 0 0.0
+    [junit] Link da inserire:  Link13 WEBCLIENTt6H1 DPId3H2
+    [junit] Risposta dal server per il link inserito: Link13 WEBCLIENTt6H1 DPId3H2
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt6H1 DPIa5H0 0.0 0
+    [junit] Link da inserire: Link14 WEBCLIENTt6H1 DPIa5H0 0 0.0
+    [junit] Link da inserire:  Link14 WEBCLIENTt6H1 DPIa5H0
+    [junit] Risposta dal server per il link inserito: Link14 WEBCLIENTt6H1 DPIa5H0
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt7H1 DPId3H2 0.0 0
+    [junit] Link da inserire: Link15 WEBCLIENTt7H1 DPId3H2 0 0.0
+    [junit] Link da inserire:  Link15 WEBCLIENTt7H1 DPId3H2
+    [junit] Risposta dal server per il link inserito: Link15 WEBCLIENTt7H1 DPId3H2
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILCLIENTt8H2 DPId3H2 0.0 0
+    [junit] Link da inserire: Link16 MAILCLIENTt8H2 DPId3H2 0 0.0
+    [junit] Link da inserire:  Link16 MAILCLIENTt8H2 DPId3H2
+    [junit] Risposta dal server per il link inserito: Link16 MAILCLIENTt8H2 DPId3H2
+    [junit] getNffgs in DeployedNffg
+    [junit] NFFG Nffg1 postato nella lista di NFFG
+    [junit] DEBUG: starting testAddNodeAndLink
+    [junit] getDeployedNffg in NfvClient
+    [junit] getNffg in DeployedNffg
+    [junit] Nodo da inserire : DPIa9H0 dpia H0 Nffg0
+    [junit] Risposta dal server per il nodo postato: DPIa9H0 dpia H0 Nffg0
+    [junit] getNffgs in DeployedNffg
+    [junit] Nffg0
+    [junit] getNffg in DeployedNffg
+    [junit] DEBUG: starting testAddLink
+    [junit] getDeployedNffg in NfvClient
+    [junit] getNffg in DeployedNffg
+    [junit] Nffg0
+    [junit] getNffg in DeployedNffg
+    [junit] DEBUG: starting testAddLink
+    [junit] getDeployedNffg in NfvClient
+    [junit] getNffg in DeployedNffg
+    [junit] Nffg0
+    [junit] getNffg in DeployedNffg
+    [junit] ------------- ---------------- ---------------
+    [junit] Testcase: testAddNodeAndLink(it.polito.dp2.NFV.lab3.tests.NFVTests):	Caused an ERROR
+    [junit] null
+    [junit] java.lang.NullPointerException
+    [junit] 	at it.polito.dp2.NFV.sol3.client1.DeployedNffg.addLink(DeployedNffg.java:475)
+    [junit] 	at it.polito.dp2.NFV.lab3.tests.NFVTests.testAddNodeAndLink(Unknown Source)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testOverwriteAlreadyExistingLink(it.polito.dp2.NFV.lab3.tests.NFVTests):	Caused an ERROR
+    [junit] null
+    [junit] java.lang.NullPointerException
+    [junit] 	at it.polito.dp2.NFV.sol3.client1.DeployedNffg.addLink(DeployedNffg.java:452)
+    [junit] 	at it.polito.dp2.NFV.lab3.tests.NFVTests.testOverwriteAlreadyExistingLink(Unknown Source)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testAddAlreadyExistingLink(it.polito.dp2.NFV.lab3.tests.NFVTests):	Caused an ERROR
+    [junit] Unexpected exception, expected<it.polito.dp2.NFV.lab3.LinkAlreadyPresentException> but was<java.lang.NullPointerException>
+    [junit] java.lang.Exception: Unexpected exception, expected<it.polito.dp2.NFV.lab3.LinkAlreadyPresentException> but was<java.lang.NullPointerException>
+    [junit] Caused by: java.lang.NullPointerException
+    [junit] 	at it.polito.dp2.NFV.sol3.client1.DeployedNffg.addLink(DeployedNffg.java:475)
+    [junit] 	at it.polito.dp2.NFV.lab3.tests.NFVTests.testAddAlreadyExistingLink(Unknown Source)
+    [junit] 
+    [junit] 
+    [junit] Test it.polito.dp2.NFV.lab3.tests.NFVTests FAILED
+
+BUILD FAILED
+/tmp/tmp.oFaCv1UItz/build.xml:192: The following error occurred while executing this line:
+/tmp/tmp.oFaCv1UItz/build.xml:215: *** Junit tests: Some Tests FAILED ***
+
+Total time: 1 minute 28 seconds
+Failed.
+
+----------------------------------------------
+Running the second set of mandatory tests...
+
+Buildfile: /tmp/tmp.oFaCv1UItz/build.xml
+Trying to override old definition of datatype resources
+
+setseed:
+
+redeployNeo4JSimpleXML:
+     [echo] Uneploying Neo4JSimpleXML to tomcat...
+ [undeploy] OK - Undeployed application at context path [/Neo4JSimpleXML]
+     [echo] Deploying Neo4JSimpleXML to tomcat... at "http://localhost:7475/manager/text"
+   [deploy] OK - Deployed application at context path [/Neo4JSimpleXML]
+
+undeployWS:
+     [echo] Undeploying...
+ [undeploy] OK - Undeployed application at context path [/NfvDeployer]
+
+redeployWS:
+
+init:
+
+build-service:
+
+generate-bindings:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Host.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/In.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Link.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Links.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Node.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/service/jaxb/VnfCatalog.java
+
+generate-artifacts-wadl:
+     [echo] Compiling the descriptions...
+      [wjc] Info: Processing: http://localhost:7475/Neo4JSimpleXML/webapi/application.wadl
+      [wjc] Info: Processing: http://localhost:7475/Neo4JSimpleXML/webapi/application.wadl/xsd0.xsd
+
+generate-bindings-client2:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/VnfCatalog.java
+
+generate-bindings-client1:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/VnfCatalog.java
+
+build-client:
+     [echo] Building client 1
+    [javac] Warning: DeployedNffg.java modified in the future.
+    [javac] Warning: NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 84 source files to /tmp/tmp.oFaCv1UItz/build
+    [javac] Note: /tmp/tmp.oFaCv1UItz/src/it/polito/dp2/NFV/sol3/service/generated/Localhost_Neo4JSimpleXMLWebapi.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [echo] Done.
+     [echo] Building client 2
+    [javac] Warning: MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 25 source files to /tmp/tmp.oFaCv1UItz/build
+     [echo] Done.
+
+build-service:
+     [echo] Build Service
+
+package-service:
+     [copy] Copying 15 files to /tmp/tmp.oFaCv1UItz/target
+     [copy] Copying 104 files to /tmp/tmp.oFaCv1UItz/target/WEB-INF/classes
+     [copy] Copying 9 files to /tmp/tmp.oFaCv1UItz/target/WEB-INF/lib
+      [jar] Building jar: /tmp/tmp.oFaCv1UItz/war/NfvDeployer.war
+
+deployWS:
+     [echo] Deploying to tomcat...
+   [deploy] OK - Deployed application at context path [/NfvDeployer]
+
+run-tests:
+     [echo] Running functional tests
+     [echo] Seed: 1113345
+
+init:
+
+build-client:
+
+generate-bindings-client2:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client2/generated/VnfCatalog.java
+
+generate-bindings-client1:
+     [exec] parsing a schema...
+     [exec] compiling a schema...
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ConnectionPerformance.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Ft.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Host.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/HostNodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/In.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Link.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Links.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffg.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nffgs.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nfv.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Node.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Nodes.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/ObjectFactory.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Performances.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/Vnf.java
+     [exec] it/polito/dp2/NFV/sol3/client1/generated/VnfCatalog.java
+
+build-client:
+     [echo] Building client 1
+    [javac] Warning: DeployedNffg.java modified in the future.
+    [javac] Warning: NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 58 source files to /tmp/tmp.oFaCv1UItz/build
+     [echo] Done.
+     [echo] Building client 2
+    [javac] Warning: MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/DeployedNffg.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client1/NfvClient.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/client2/MyNfvReader.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerDB.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerResource.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/NfvDeployerService.java modified in the future.
+    [javac] Warning: it/polito/dp2/NFV/sol3/service/ReachabilityTester.java modified in the future.
+    [javac] Compiling 25 source files to /tmp/tmp.oFaCv1UItz/build
+     [echo] Done.
+
+runFuncTest.real:
+     [echo] Running Junit tests...
+    [junit] Running it.polito.dp2.NFV.lab3.tests.NFVTests
+    [junit] Testsuite: it.polito.dp2.NFV.lab3.tests.NFVTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.379 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.379 sec
+    [junit] 
+    [junit] ------------- Standard Output ---------------
+    [junit] Random NfvReader: Using seed: 1113345
+    [junit] Random NfvReader: Test case: 0
+    [junit] DEBUG: starting testDeployNffg
+    [junit] deployNffg in NfvClient
+    [junit] Host del Node descriptor n°0 :H0
+    [junit] Host del Node descriptor n°1 :H0
+    [junit] Host del Node descriptor n°2 :H0
+    [junit] Host del Node descriptor n°3 :H0
+    [junit] Host del Node descriptor n°4 :H1
+    [junit] Host del Node descriptor n°5 :H1
+    [junit] Host del Node descriptor n°6 :H1
+    [junit] Host del Node descriptor n°7 :H1
+    [junit] Host del Node descriptor n°8 :H0
+    [junit] Host del Node descriptor n°9 :H0
+    [junit] Host del Node descriptor n°10 :H1
+    [junit] Host del Node descriptor n°11 :H1
+    [junit] Host del Node descriptor n°12 :H1
+    [junit] Numero di nodi nell'Nffg Descriptor: 13
+    [junit] deployNffg in DeployedNffg
+    [junit] getNffgs in DeployedNffg
+    [junit] Numero di nffg: 1
+    [junit] Nffg1
+    [junit] Riposta dal server per l'NFFG postato: Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] Nodo da inserire : WEBSERVERt0H0 WEBSERVERt H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBSERVERt0H0 WEBSERVERt H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt0H0
+    [junit] Nodo da inserire : CACHEc1H0 CACHEc H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: CACHEc1H0 CACHEc H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] CACHEc1H0
+    [junit] Nodo da inserire : NATd2H0 NATd H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: NATd2H0 NATd H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] NATd2H0
+    [junit] Nodo da inserire : DPIb3H0 DPIb H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: DPIb3H0 DPIb H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb3H0
+    [junit] Nodo da inserire : DPIa4H1 DPIa H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: DPIa4H1 DPIa H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa4H1
+    [junit] Nodo da inserire : WEBSERVERt5H1 WEBSERVERt H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBSERVERt5H1 WEBSERVERt H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt5H1
+    [junit] Nodo da inserire : WEBCLIENTt6H1 WEBCLIENTt H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBCLIENTt6H1 WEBCLIENTt H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt6H1
+    [junit] Nodo da inserire : MAILSERVERt7H1 MAILSERVERt H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: MAILSERVERt7H1 MAILSERVERt H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt7H1
+    [junit] Nodo da inserire : MAILSERVERt8H0 MAILSERVERt H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: MAILSERVERt8H0 MAILSERVERt H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt8H0
+    [junit] Nodo da inserire : WEBSERVERt9H0 WEBSERVERt H0 Nffg1
+    [junit] Risposta dal server per il nodo postato: WEBSERVERt9H0 WEBSERVERt H0 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt9H0
+    [junit] Nodo da inserire : NATd10H1 NATd H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: NATd10H1 NATd H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] NATd10H1
+    [junit] Nodo da inserire : DPIa11H1 DPIa H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: DPIa11H1 DPIa H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa11H1
+    [junit] Nodo da inserire : DPIb12H1 DPIb H1 Nffg1
+    [junit] Risposta dal server per il nodo postato: DPIb12H1 DPIb H1 Nffg1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb12H1
+    [junit] WEBSERVERt0H0 NATd2H0 0.0 0
+    [junit] Link da inserire: Link0 WEBSERVERt0H0 NATd2H0 0 0.0
+    [junit] Link da inserire:  Link0 WEBSERVERt0H0 NATd2H0
+    [junit] Risposta dal server per il link inserito: Link0 WEBSERVERt0H0 NATd2H0
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt0H0 CACHEc1H0 0.0 0
+    [junit] Link da inserire: Link1 WEBSERVERt0H0 CACHEc1H0 0 0.0
+    [junit] Link da inserire:  Link1 WEBSERVERt0H0 CACHEc1H0
+    [junit] Risposta dal server per il link inserito: Link1 WEBSERVERt0H0 CACHEc1H0
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt0H0 DPIa4H1 0.0 0
+    [junit] Link da inserire: Link2 WEBSERVERt0H0 DPIa4H1 0 0.0
+    [junit] Link da inserire:  Link2 WEBSERVERt0H0 DPIa4H1
+    [junit] Risposta dal server per il link inserito: Link2 WEBSERVERt0H0 DPIa4H1
+    [junit] getNffgs in DeployedNffg
+    [junit] CACHEc1H0 MAILSERVERt7H1 0.0 0
+    [junit] Link da inserire: Link3 CACHEc1H0 MAILSERVERt7H1 0 0.0
+    [junit] Link da inserire:  Link3 CACHEc1H0 MAILSERVERt7H1
+    [junit] Risposta dal server per il link inserito: Link3 CACHEc1H0 MAILSERVERt7H1
+    [junit] getNffgs in DeployedNffg
+    [junit] CACHEc1H0 WEBSERVERt0H0 0.0 0
+    [junit] Link da inserire: Link4 CACHEc1H0 WEBSERVERt0H0 0 0.0
+    [junit] Link da inserire:  Link4 CACHEc1H0 WEBSERVERt0H0
+    [junit] Risposta dal server per il link inserito: Link4 CACHEc1H0 WEBSERVERt0H0
+    [junit] getNffgs in DeployedNffg
+    [junit] CACHEc1H0 NATd10H1 0.0 0
+    [junit] Link da inserire: Link5 CACHEc1H0 NATd10H1 0 0.0
+    [junit] Link da inserire:  Link5 CACHEc1H0 NATd10H1
+    [junit] Risposta dal server per il link inserito: Link5 CACHEc1H0 NATd10H1
+    [junit] getNffgs in DeployedNffg
+    [junit] NATd2H0 WEBSERVERt5H1 0.0 0
+    [junit] Link da inserire: Link6 NATd2H0 WEBSERVERt5H1 0 0.0
+    [junit] Link da inserire:  Link6 NATd2H0 WEBSERVERt5H1
+    [junit] Risposta dal server per il link inserito: Link6 NATd2H0 WEBSERVERt5H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb3H0 WEBSERVERt9H0 0.0 0
+    [junit] Link da inserire: Link7 DPIb3H0 WEBSERVERt9H0 0 0.0
+    [junit] Link da inserire:  Link7 DPIb3H0 WEBSERVERt9H0
+    [junit] Risposta dal server per il link inserito: Link7 DPIb3H0 WEBSERVERt9H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb3H0 WEBCLIENTt6H1 0.0 0
+    [junit] Link da inserire: Link8 DPIb3H0 WEBCLIENTt6H1 0 0.0
+    [junit] Link da inserire:  Link8 DPIb3H0 WEBCLIENTt6H1
+    [junit] Risposta dal server per il link inserito: Link8 DPIb3H0 WEBCLIENTt6H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb3H0 DPIb12H1 0.0 0
+    [junit] Link da inserire: Link9 DPIb3H0 DPIb12H1 0 0.0
+    [junit] Link da inserire:  Link9 DPIb3H0 DPIb12H1
+    [junit] Risposta dal server per il link inserito: Link9 DPIb3H0 DPIb12H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb3H0 DPIa4H1 0.0 0
+    [junit] Link da inserire: Link10 DPIb3H0 DPIa4H1 0 0.0
+    [junit] Link da inserire:  Link10 DPIb3H0 DPIa4H1
+    [junit] Risposta dal server per il link inserito: Link10 DPIb3H0 DPIa4H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb3H0 WEBSERVERt5H1 0.0 0
+    [junit] Link da inserire: Link11 DPIb3H0 WEBSERVERt5H1 0 0.0
+    [junit] Link da inserire:  Link11 DPIb3H0 WEBSERVERt5H1
+    [junit] Risposta dal server per il link inserito: Link11 DPIb3H0 WEBSERVERt5H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb3H0 DPIa11H1 0.0 0
+    [junit] Link da inserire: Link12 DPIb3H0 DPIa11H1 0 0.0
+    [junit] Link da inserire:  Link12 DPIb3H0 DPIa11H1
+    [junit] Risposta dal server per il link inserito: Link12 DPIb3H0 DPIa11H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa4H1 MAILSERVERt8H0 0.0 0
+    [junit] Link da inserire: Link13 DPIa4H1 MAILSERVERt8H0 0 0.0
+    [junit] Link da inserire:  Link13 DPIa4H1 MAILSERVERt8H0
+    [junit] Risposta dal server per il link inserito: Link13 DPIa4H1 MAILSERVERt8H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa4H1 WEBCLIENTt6H1 0.0 0
+    [junit] Link da inserire: Link14 DPIa4H1 WEBCLIENTt6H1 0 0.0
+    [junit] Link da inserire:  Link14 DPIa4H1 WEBCLIENTt6H1
+    [junit] Risposta dal server per il link inserito: Link14 DPIa4H1 WEBCLIENTt6H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa4H1 WEBSERVERt0H0 0.0 0
+    [junit] Link da inserire: Link15 DPIa4H1 WEBSERVERt0H0 0 0.0
+    [junit] Link da inserire:  Link15 DPIa4H1 WEBSERVERt0H0
+    [junit] Risposta dal server per il link inserito: Link15 DPIa4H1 WEBSERVERt0H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa4H1 NATd10H1 0.0 0
+    [junit] Link da inserire: Link16 DPIa4H1 NATd10H1 0 0.0
+    [junit] Link da inserire:  Link16 DPIa4H1 NATd10H1
+    [junit] Risposta dal server per il link inserito: Link16 DPIa4H1 NATd10H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa4H1 WEBSERVERt5H1 0.0 0
+    [junit] Link da inserire: Link17 DPIa4H1 WEBSERVERt5H1 0 0.0
+    [junit] Link da inserire:  Link17 DPIa4H1 WEBSERVERt5H1
+    [junit] Risposta dal server per il link inserito: Link17 DPIa4H1 WEBSERVERt5H1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt5H1 DPIb3H0 0.0 0
+    [junit] Link da inserire: Link18 WEBSERVERt5H1 DPIb3H0 0 0.0
+    [junit] Link da inserire:  Link18 WEBSERVERt5H1 DPIb3H0
+    [junit] Risposta dal server per il link inserito: Link18 WEBSERVERt5H1 DPIb3H0
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt5H1 CACHEc1H0 0.0 0
+    [junit] Link da inserire: Link19 WEBSERVERt5H1 CACHEc1H0 0 0.0
+    [junit] Link da inserire:  Link19 WEBSERVERt5H1 CACHEc1H0
+    [junit] Risposta dal server per il link inserito: Link19 WEBSERVERt5H1 CACHEc1H0
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt6H1 DPIb3H0 0.0 0
+    [junit] Link da inserire: Link20 WEBCLIENTt6H1 DPIb3H0 0 0.0
+    [junit] Link da inserire:  Link20 WEBCLIENTt6H1 DPIb3H0
+    [junit] Risposta dal server per il link inserito: Link20 WEBCLIENTt6H1 DPIb3H0
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBCLIENTt6H1 DPIa4H1 0.0 0
+    [junit] Link da inserire: Link21 WEBCLIENTt6H1 DPIa4H1 0 0.0
+    [junit] Link da inserire:  Link21 WEBCLIENTt6H1 DPIa4H1
+    [junit] Risposta dal server per il link inserito: Link21 WEBCLIENTt6H1 DPIa4H1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt7H1 CACHEc1H0 0.0 0
+    [junit] Link da inserire: Link22 MAILSERVERt7H1 CACHEc1H0 0 0.0
+    [junit] Link da inserire:  Link22 MAILSERVERt7H1 CACHEc1H0
+    [junit] Risposta dal server per il link inserito: Link22 MAILSERVERt7H1 CACHEc1H0
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt8H0 NATd10H1 0.0 0
+    [junit] Link da inserire: Link23 MAILSERVERt8H0 NATd10H1 0 0.0
+    [junit] Link da inserire:  Link23 MAILSERVERt8H0 NATd10H1
+    [junit] Risposta dal server per il link inserito: Link23 MAILSERVERt8H0 NATd10H1
+    [junit] getNffgs in DeployedNffg
+    [junit] MAILSERVERt8H0 DPIb12H1 0.0 0
+    [junit] Link da inserire: Link24 MAILSERVERt8H0 DPIb12H1 0 0.0
+    [junit] Link da inserire:  Link24 MAILSERVERt8H0 DPIb12H1
+    [junit] Risposta dal server per il link inserito: Link24 MAILSERVERt8H0 DPIb12H1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt9H0 NATd10H1 0.0 0
+    [junit] Link da inserire: Link25 WEBSERVERt9H0 NATd10H1 0 0.0
+    [junit] Link da inserire:  Link25 WEBSERVERt9H0 NATd10H1
+    [junit] Risposta dal server per il link inserito: Link25 WEBSERVERt9H0 NATd10H1
+    [junit] getNffgs in DeployedNffg
+    [junit] WEBSERVERt9H0 DPIb3H0 0.0 0
+    [junit] Link da inserire: Link26 WEBSERVERt9H0 DPIb3H0 0 0.0
+    [junit] Link da inserire:  Link26 WEBSERVERt9H0 DPIb3H0
+    [junit] Risposta dal server per il link inserito: Link26 WEBSERVERt9H0 DPIb3H0
+    [junit] getNffgs in DeployedNffg
+    [junit] NATd10H1 WEBSERVERt9H0 0.0 0
+    [junit] Link da inserire: Link27 NATd10H1 WEBSERVERt9H0 0 0.0
+    [junit] Link da inserire:  Link27 NATd10H1 WEBSERVERt9H0
+    [junit] Risposta dal server per il link inserito: Link27 NATd10H1 WEBSERVERt9H0
+    [junit] getNffgs in DeployedNffg
+    [junit] NATd10H1 NATd2H0 0.0 0
+    [junit] Link da inserire: Link28 NATd10H1 NATd2H0 0 0.0
+    [junit] Link da inserire:  Link28 NATd10H1 NATd2H0
+    [junit] Risposta dal server per il link inserito: Link28 NATd10H1 NATd2H0
+    [junit] getNffgs in DeployedNffg
+    [junit] NATd10H1 WEBCLIENTt6H1 0.0 0
+    [junit] Link da inserire: Link29 NATd10H1 WEBCLIENTt6H1 0 0.0
+    [junit] Link da inserire:  Link29 NATd10H1 WEBCLIENTt6H1
+    [junit] Risposta dal server per il link inserito: Link29 NATd10H1 WEBCLIENTt6H1
+    [junit] getNffgs in DeployedNffg
+    [junit] NATd10H1 MAILSERVERt8H0 0.0 0
+    [junit] Link da inserire: Link30 NATd10H1 MAILSERVERt8H0 0 0.0
+    [junit] Link da inserire:  Link30 NATd10H1 MAILSERVERt8H0
+    [junit] Risposta dal server per il link inserito: Link30 NATd10H1 MAILSERVERt8H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa11H1 DPIb3H0 0.0 0
+    [junit] Link da inserire: Link31 DPIa11H1 DPIb3H0 0 0.0
+    [junit] Link da inserire:  Link31 DPIa11H1 DPIb3H0
+    [junit] Risposta dal server per il link inserito: Link31 DPIa11H1 DPIb3H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa11H1 WEBCLIENTt6H1 0.0 0
+    [junit] Link da inserire: Link32 DPIa11H1 WEBCLIENTt6H1 0 0.0
+    [junit] Link da inserire:  Link32 DPIa11H1 WEBCLIENTt6H1
+    [junit] Risposta dal server per il link inserito: Link32 DPIa11H1 WEBCLIENTt6H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIa11H1 NATd2H0 0.0 0
+    [junit] Link da inserire: Link33 DPIa11H1 NATd2H0 0 0.0
+    [junit] Link da inserire:  Link33 DPIa11H1 NATd2H0
+    [junit] Risposta dal server per il link inserito: Link33 DPIa11H1 NATd2H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb12H1 WEBSERVERt5H1 0.0 0
+    [junit] Link da inserire: Link34 DPIb12H1 WEBSERVERt5H1 0 0.0
+    [junit] Link da inserire:  Link34 DPIb12H1 WEBSERVERt5H1
+    [junit] Risposta dal server per il link inserito: Link34 DPIb12H1 WEBSERVERt5H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb12H1 NATd2H0 0.0 0
+    [junit] Link da inserire: Link35 DPIb12H1 NATd2H0 0 0.0
+    [junit] Link da inserire:  Link35 DPIb12H1 NATd2H0
+    [junit] Risposta dal server per il link inserito: Link35 DPIb12H1 NATd2H0
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb12H1 MAILSERVERt7H1 0.0 0
+    [junit] Link da inserire: Link36 DPIb12H1 MAILSERVERt7H1 0 0.0
+    [junit] Link da inserire:  Link36 DPIb12H1 MAILSERVERt7H1
+    [junit] Risposta dal server per il link inserito: Link36 DPIb12H1 MAILSERVERt7H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb12H1 DPIa4H1 0.0 0
+    [junit] Link da inserire: Link37 DPIb12H1 DPIa4H1 0 0.0
+    [junit] Link da inserire:  Link37 DPIb12H1 DPIa4H1
+    [junit] Risposta dal server per il link inserito: Link37 DPIb12H1 DPIa4H1
+    [junit] getNffgs in DeployedNffg
+    [junit] DPIb12H1 CACHEc1H0 0.0 0
+    [junit] Link da inserire: Link38 DPIb12H1 CACHEc1H0 0 0.0
+    [junit] Link da inserire:  Link38 DPIb12H1 CACHEc1H0
+    [junit] Risposta dal server per il link inserito: Link38 DPIb12H1 CACHEc1H0
+    [junit] getNffgs in DeployedNffg
+    [junit] NFFG Nffg1 postato nella lista di NFFG
+    [junit] DEBUG: starting testAddNodeAndLink
+    [junit] getDeployedNffg in NfvClient
+    [junit] getNffg in DeployedNffg
+    [junit] Nodo da inserire : CACHEc13H1 cachec H1 Nffg0
+    [junit] Risposta dal server per il nodo postato: CACHEc13H1 cachec H1 Nffg0
+    [junit] getNffgs in DeployedNffg
+    [junit] Nffg0
+    [junit] getNffg in DeployedNffg
+    [junit] Link da inserire:  Link39 CACHEc13H1 CACHEc3Nffg0
+    [junit] Risposta dal server per il link inserito: Link39 CACHEc13H1 CACHEc3Nffg0
+    [junit] getNffgs in DeployedNffg
+    [junit] DEBUG: starting testAddLink
+    [junit] getDeployedNffg in NfvClient
+    [junit] getNffg in DeployedNffg
+    [junit] Nffg0
+    [junit] getNffg in DeployedNffg
+    [junit] Link da inserire:  Link40 CACHEc3Nffg0 MAILSERVERt1Nffg0
+    [junit] Risposta dal server per il link inserito: Link40 CACHEc3Nffg0 MAILSERVERt1Nffg0
+    [junit] getNffgs in DeployedNffg
+    [junit] DEBUG: starting testAddLink
+    [junit] getDeployedNffg in NfvClient
+    [junit] getNffg in DeployedNffg
+    [junit] Nffg0
+    [junit] getNffg in DeployedNffg
+    [junit] Comparing server H0
+    [junit] Comparing server H1
+    [junit] ------------- ---------------- ---------------
+     [echo] *** Junit tests: All Tests PASSED  ***
+
+BUILD SUCCESSFUL
+Total time: 1 minute 15 seconds
+Done.
+
+
+Mandatory tests failed.
+
+Number of tests passed: 1 / 2
+Correction of assignment 3 failed.
+ 
+---------------------- TOMCAT CATALINA LOG ----------------------
+ 
+22-Feb-2018 09:01:42.450 INFO [http-nio-7475-exec-14166] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Neo4JSimpleXML]
+22-Feb-2018 09:01:42.725 INFO [http-nio-7475-exec-14167] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/apache-tomcat-8.5.20/webapps/Neo4JSimpleXML.war]
+22-Feb-2018 09:02:05.149 INFO [http-nio-7475-exec-14167] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/apache-tomcat-8.5.20/webapps/Neo4JSimpleXML.war] has finished in [22,423] ms
+22-Feb-2018 09:02:05.949 INFO [http-nio-7475-exec-14169] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/NfvDeployer]
+22-Feb-2018 09:02:26.033 INFO [http-nio-7475-exec-14169] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/apache-tomcat-8.5.20/webapps/NfvDeployer.war]
+22-Feb-2018 09:02:42.721 INFO [http-nio-7475-exec-14169] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/apache-tomcat-8.5.20/webapps/NfvDeployer.war] has finished in [16,687] ms
+22-Feb-2018 09:03:10.705 INFO [http-nio-7475-exec-14183] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Neo4JSimpleXML]
+22-Feb-2018 09:03:10.764 INFO [http-nio-7475-exec-14186] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/apache-tomcat-8.5.20/webapps/Neo4JSimpleXML.war]
+22-Feb-2018 09:03:27.112 INFO [http-nio-7475-exec-14186] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/apache-tomcat-8.5.20/webapps/Neo4JSimpleXML.war] has finished in [16,347] ms
+22-Feb-2018 09:03:27.681 INFO [http-nio-7475-exec-14185] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/NfvDeployer]
+22-Feb-2018 09:03:43.268 INFO [http-nio-7475-exec-14185] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/apache-tomcat-8.5.20/webapps/NfvDeployer.war]
+22-Feb-2018 09:03:58.990 INFO [http-nio-7475-exec-14185] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/apache-tomcat-8.5.20/webapps/NfvDeployer.war] has finished in [15,721] ms
+ 
+---------------------- TOMCAT LOCALHOST LOG ----------------------
+ 
